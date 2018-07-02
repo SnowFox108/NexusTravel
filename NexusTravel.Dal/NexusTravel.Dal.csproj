@@ -17,10 +17,8 @@
     <Folder Include="CommandHandlers\" />
     <Folder Include="CreateQueries\" />
     <Folder Include="Entities\" />
-    <Folder Include="Enums\" />
     <Folder Include="Commands\" />
     <Folder Include="Mappers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>
