@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexusTravel.ClientTest", "N
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AirEngine", "AirEngine", "{BD98E4B2-D5F8-4A6F-85DB-27D2FC786EF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusTravel.AirEngine.BritishAirway", "AirEngine\NexusTravel.AirEngine.BritishAirway\NexusTravel.AirEngine.BritishAirway.csproj", "{91012465-EC43-4619-9C38-BC40E2A94395}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexusTravel.AirEngine.BritishAirway", "AirEngine\NexusTravel.AirEngine.BritishAirway\NexusTravel.AirEngine.BritishAirway.csproj", "{91012465-EC43-4619-9C38-BC40E2A94395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusTravel.WebAPI", "NexusTravel.WebAPI\NexusTravel.WebAPI.csproj", "{1EB496F7-C1C8-404F-A696-40B44C3558B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{91012465-EC43-4619-9C38-BC40E2A94395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91012465-EC43-4619-9C38-BC40E2A94395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91012465-EC43-4619-9C38-BC40E2A94395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB496F7-C1C8-404F-A696-40B44C3558B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB496F7-C1C8-404F-A696-40B44C3558B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB496F7-C1C8-404F-A696-40B44C3558B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB496F7-C1C8-404F-A696-40B44C3558B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
