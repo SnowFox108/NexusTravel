@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Folder Include="Models\Infrastructures\" />
+    <Folder Include="Models\Common\" />
+    <Folder Include="Models\Send\" />
   </ItemGroup>
 
 </Project>

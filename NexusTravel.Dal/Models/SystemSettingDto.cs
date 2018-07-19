@@ -2,7 +2,8 @@
 {
     public class SystemSettingDto
     {
-        public string Test { get; set; }
+        public string AirShoppingApiUrl { get; set; }
+        public string AirShoppingClientKey { get; set; }
 
     }
 }
