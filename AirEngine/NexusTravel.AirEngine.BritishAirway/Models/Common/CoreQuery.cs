@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace ClientTest.Entities
+namespace NexusTravel.AirEngine.BritishAirway.Models.Common
 {
-    public class CoreQuery
+    internal class CoreQuery
     {
         public List<OriginDestination> OriginDestinations { get; set; }
     }

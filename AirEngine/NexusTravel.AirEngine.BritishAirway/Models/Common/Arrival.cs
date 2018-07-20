@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClientTest.Entities
+﻿namespace NexusTravel.AirEngine.BritishAirway.Models.Common
 {
-    public class Arrival
+    internal class Arrival
     {
         public string AirportCode { get; set; }
     }

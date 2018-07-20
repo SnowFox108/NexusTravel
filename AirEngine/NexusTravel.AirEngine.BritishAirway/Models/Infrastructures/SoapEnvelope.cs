@@ -5,7 +5,7 @@ namespace NexusTravel.AirEngine.BritishAirway.Models.Infrastructures
 {
     [XmlType(Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
     [XmlRoot(ElementName = "Envelope", Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
-    public class SoapEnvelope
+    internal class SoapEnvelope
     {
         [XmlAttribute(AttributeName = "soapenv", Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
         public string soapenva { get; set; }

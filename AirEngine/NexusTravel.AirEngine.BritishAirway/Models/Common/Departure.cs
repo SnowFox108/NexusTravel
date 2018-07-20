@@ -1,14 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
 
-namespace ClientTest.Entities
+namespace NexusTravel.AirEngine.BritishAirway.Models.Common
 {
-    public class Departure
+    internal class Departure
     {
         public string AirportCode { get; set; }
-        public string Date { get; set; }
+        [XmlIgnore]
+        public DateTime Date { get; set; }
+
+        [XmlElement("Date")]
+        public string DateString
+        {
+            get => Date.ToString("yyyy-MM-dd");
+            set => Date = DateTime.Parse(value);
+        }
     }
 }
