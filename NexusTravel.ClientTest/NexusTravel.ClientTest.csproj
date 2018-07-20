@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AirEngine\NexusTravel.AirEngine.BritishAirway\NexusTravel.AirEngine.BritishAirway.csproj" />
     <ProjectReference Include="..\NexusTravel.Dal\NexusTravel.Dal.csproj" />
     <ProjectReference Include="..\NexusTravel.Infrastructure\NexusTravel.Infrastructure.csproj" />
     <ProjectReference Include="..\NexusTravel.Main\NexusTravel.Main.csproj" />

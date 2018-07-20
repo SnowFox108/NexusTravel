@@ -1,6 +1,6 @@
 ﻿using NexusTravel.Dal.Models;
 
-namespace NexusTravel.Main.StaticDataCache
+namespace NexusTravel.Common.StaticDataCache
 {
     public interface IStaticDataCachingService
     {

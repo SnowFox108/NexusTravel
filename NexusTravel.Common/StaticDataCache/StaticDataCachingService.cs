@@ -1,7 +1,7 @@
-﻿using NexusTravel.Dal.Models;
-using Microsoft.Extensions.Caching.Memory;
+﻿using Microsoft.Extensions.Caching.Memory;
+using NexusTravel.Dal.Models;
 
-namespace NexusTravel.Main.StaticDataCache
+namespace NexusTravel.Common.StaticDataCache
 {
     public class StaticDataCachingService : IStaticDataCachingService, ICachingService
     {

@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Microsoft.Extensions.Logging;
 using NexusTravel.Dal.Models;
 using NexusTravel.Dal.Queries;
-using Microsoft.Extensions.Logging;
 
-namespace NexusTravel.Main.StaticDataCache
+namespace NexusTravel.Common.StaticDataCache
 {
     public class StaticDataService : IStaticDataService
     {

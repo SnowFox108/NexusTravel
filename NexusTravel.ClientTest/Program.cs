@@ -4,9 +4,10 @@ using AutoMapper;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using NexusTravel.AirEngine.BritishAirway.Ioc;
+using NexusTravel.Common.StaticDataCache;
 using NexusTravel.Dal;
 using NexusTravel.Dal.Queries;
-using NexusTravel.Main.StaticDataCache;
 using NLog.Extensions.Logging;
 
 namespace NexusTravel.ClientTest
@@ -50,6 +51,7 @@ namespace NexusTravel.ClientTest
 
             services.AddTransient<TestSystemSettings>();
             services.AddAutoMapper();
+            services.AddAirShopping();
 
             var serviceProvider = services
                 .AddMemoryCache()

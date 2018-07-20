@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NexusTravel.AirEngine.BritishAirway.Models;
 using NexusTravel.Dal.Models;
 
 namespace NexusTravel.WebAPI.Controllers
@@ -13,7 +14,7 @@ namespace NexusTravel.WebAPI.Controllers
         }
 
         [HttpPost]
-        public string Post([FromBody] FlightSearchForm form)
+        public string Post([FromBody] FlightSearch form)
         {
             return "result";
         }

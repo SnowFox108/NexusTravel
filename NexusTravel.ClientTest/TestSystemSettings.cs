@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Extensions.Logging;
+using NexusTravel.AirEngine.BritishAirway;
+using NexusTravel.Common.StaticDataCache;
 using NexusTravel.Dal.Models;
-using NexusTravel.Main.StaticDataCache;
 
 namespace NexusTravel.ClientTest
 {
@@ -11,11 +12,14 @@ namespace NexusTravel.ClientTest
     {
         private readonly ILogger<TestSystemSettings> _logger;
         private readonly SystemSettingDto _systemSetting;
+        private readonly IFlightSearchService _flightSearchService;
         public TestSystemSettings(
             ILogger<TestSystemSettings> logger, 
-            IStaticDataCachingService staticDataCachingService)
+            IStaticDataCachingService staticDataCachingService, 
+            IFlightSearchService flightSearchService)
         {
             _logger = logger;
+            _flightSearchService = flightSearchService;
             _systemSetting = staticDataCachingService.SystemSettings();
         }
 
@@ -23,6 +27,7 @@ namespace NexusTravel.ClientTest
         {
             Console.WriteLine($"Url: {_systemSetting.AirShoppingApiUrl}");
             Console.WriteLine($"Key: {_systemSetting.AirShoppingClientKey}");
+            Console.WriteLine($"From Inner: {_flightSearchService.Search()}");
             //_logger.LogInformation($"Logging Test Url: {_systemSetting.AirShoppingApiUrl}");
 
 

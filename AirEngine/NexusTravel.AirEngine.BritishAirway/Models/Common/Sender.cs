@@ -1,7 +1,7 @@
-﻿namespace ClientTest.Entities
+﻿namespace NexusTravel.AirEngine.BritishAirway.Models.Common
 {
-    public class Sender
+    internal class Sender
     {
-        public TravelAgencySender TravelAgencySender { get; set; }
+        internal TravelAgencySender TravelAgencySender { get; set; }
     }
 }

@@ -1,9 +1,11 @@
 ﻿using System;
-using NexusTravel.Dal.Enums;
+using System.Collections.Generic;
+using System.Text;
+using NexusTravel.AirEngine.BritishAirway.Enums;
 
-namespace NexusTravel.Dal.Models
+namespace NexusTravel.AirEngine.BritishAirway.Models
 {
-    public class FlightSearchForm
+    public class FlightSearch
     {
         public TripType TripType { get; set; }
         public string From { get; set; }

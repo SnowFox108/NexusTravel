@@ -1,4 +1,4 @@
-﻿namespace NexusTravel.Main.StaticDataCache
+﻿namespace NexusTravel.Common.StaticDataCache
 {
     public interface ICachingService
     {

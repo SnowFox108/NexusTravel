@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NexusTravel.Dal.Enums
+﻿namespace NexusTravel.AirEngine.BritishAirway.Enums
 {
     public enum FlightClass
     {

@@ -1,4 +1,4 @@
-﻿namespace NexusTravel.Dal.Enums
+﻿namespace NexusTravel.AirEngine.BritishAirway.Enums
 {
     public enum TripType
     {

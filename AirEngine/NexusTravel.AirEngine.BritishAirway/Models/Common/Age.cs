@@ -1,13 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
 
-namespace ClientTest.Entities
+namespace NexusTravel.AirEngine.BritishAirway.Models.Common
 {
-    public class Age
+    internal class Age
     {
-        public string BirthDate { get; set; }
+        [XmlIgnore]
+        public DateTime BirthDate { get; set; }
+
+        [XmlElement("BirthDate")]
+        public string BirthDateString
+        {
+            get => BirthDate.ToString("yyyy-MM-dd");
+            set => BirthDate = DateTime.Parse(value);
+        }
     }
 }
