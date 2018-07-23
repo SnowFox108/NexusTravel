@@ -50,6 +50,7 @@ namespace NexusTravel.ClientTest
             services.AddTransient<ISystemSettingQuery, SystemSettingQuery>();
 
             services.AddTransient<TestSystemSettings>();
+            services.AddTransient<SoapSendingTest>();
             services.AddAutoMapper();
             services.AddAirShopping();
 

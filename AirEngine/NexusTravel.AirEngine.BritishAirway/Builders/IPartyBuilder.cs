@@ -2,7 +2,7 @@
 
 namespace NexusTravel.AirEngine.BritishAirway.Builders
 {
-    internal interface IPartyBuilder
+    public interface IPartyBuilder
     {
         Party Create();
     }

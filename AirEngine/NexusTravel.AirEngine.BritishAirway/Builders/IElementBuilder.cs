@@ -2,7 +2,7 @@
 
 namespace NexusTravel.AirEngine.BritishAirway.Builders
 {
-    internal interface IElementBuilder<out T>
+    public interface IElementBuilder<out T>
     {
         T Create(FlightSearch search);
     }

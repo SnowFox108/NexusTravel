@@ -2,7 +2,7 @@
 
 namespace NexusTravel.AirEngine.BritishAirway.Builders
 {
-    internal class DocumentFactory : IDocumentFactory
+    public class DocumentFactory : IDocumentFactory
     {
         public Document Create()
         {

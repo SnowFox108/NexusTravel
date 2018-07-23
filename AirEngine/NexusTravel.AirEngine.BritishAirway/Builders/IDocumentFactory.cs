@@ -3,7 +3,7 @@ using NexusTravel.AirEngine.BritishAirway.Models.Common;
 
 namespace NexusTravel.AirEngine.BritishAirway.Builders
 {
-    internal interface IDocumentFactory
+    public interface IDocumentFactory
     {
         Document Create();
     }

@@ -3,7 +3,7 @@ using System.Xml.Serialization;
 
 namespace NexusTravel.AirEngine.BritishAirway.Models.Common
 {
-    internal class Age
+    public class Age
     {
         [XmlIgnore]
         public DateTime BirthDate { get; set; }

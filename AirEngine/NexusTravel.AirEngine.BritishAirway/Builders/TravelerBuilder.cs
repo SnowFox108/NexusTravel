@@ -6,7 +6,7 @@ using NexusTravel.AirEngine.BritishAirway.Models.Common;
 
 namespace NexusTravel.AirEngine.BritishAirway.Builders
 {
-    internal class TravelerBuilder : ITravelerBuilder
+    public class TravelerBuilder : ITravelerBuilder
     {
         public List<Traveler> Create(FlightSearch search)
         {

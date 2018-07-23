@@ -1,6 +1,6 @@
 ﻿namespace NexusTravel.AirEngine.BritishAirway.Models.Common
 {
-    internal class Traveler
+    public class Traveler
     {
         public AnonymousTraveler AnonymousTraveler { get; set; }
     }

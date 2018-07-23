@@ -7,7 +7,7 @@ namespace NexusTravel.ClientTest
     {
         public Runner(IServiceProvider service)
         {
-            var runner = service.GetRequiredService<TestSystemSettings>();
+            var runner = service.GetRequiredService<SoapSendingTest>();
             runner.Display();
         }
     }

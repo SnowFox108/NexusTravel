@@ -6,7 +6,7 @@ using NexusTravel.AirEngine.BritishAirway.Models.Common;
 
 namespace NexusTravel.AirEngine.BritishAirway.Builders
 {
-    internal class CoreQueryBuilder : ICoreQueryBuilder
+    public class CoreQueryBuilder : ICoreQueryBuilder
     {
         public CoreQuery Create(FlightSearch search)
         {

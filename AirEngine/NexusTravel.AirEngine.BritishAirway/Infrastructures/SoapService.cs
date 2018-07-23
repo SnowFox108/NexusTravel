@@ -7,7 +7,7 @@ using NexusTravel.Dal.Models;
 
 namespace NexusTravel.AirEngine.BritishAirway.Infrastructures
 {
-    internal class SoapService : ISoapService
+    public class SoapService : ISoapService
     {
         private readonly ILogger<SoapService> _logger;
         private readonly SystemSettingDto _systemSetting;

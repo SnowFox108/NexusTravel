@@ -27,7 +27,7 @@ namespace NexusTravel.ClientTest
         {
             Console.WriteLine($"Url: {_systemSetting.AirShoppingApiUrl}");
             Console.WriteLine($"Key: {_systemSetting.AirShoppingClientKey}");
-            Console.WriteLine($"From Inner: {_flightSearchService.Search()}");
+            //Console.WriteLine($"From Inner: {_flightSearchService.Search()}");
             //_logger.LogInformation($"Logging Test Url: {_systemSetting.AirShoppingApiUrl}");
 
 

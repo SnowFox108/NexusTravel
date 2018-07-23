@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using NexusTravel.AirEngine.BritishAirway.Models;
 
 namespace NexusTravel.AirEngine.BritishAirway
 {
@@ -13,9 +11,9 @@ namespace NexusTravel.AirEngine.BritishAirway
             _airShoppingService = airShoppingService;
         }
 
-        public string Search()
+        public string Search(FlightSearch search)
         {
-            return _airShoppingService.Say();
+            return _airShoppingService.FlightSearch(search);
         }
     }
 }

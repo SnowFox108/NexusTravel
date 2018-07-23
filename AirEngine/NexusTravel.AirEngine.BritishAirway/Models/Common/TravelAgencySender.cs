@@ -2,7 +2,7 @@
 
 namespace NexusTravel.AirEngine.BritishAirway.Models.Common
 {
-    internal class TravelAgencySender
+    public class TravelAgencySender
     {
         public string Name { get; set; }
         public List<Contact> Contacts { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace NexusTravel.AirEngine.BritishAirway.Models.Common
 {
-    internal class Contact
+    public class Contact
     {
         public EmailContact EmailContact { get; set; }
     }

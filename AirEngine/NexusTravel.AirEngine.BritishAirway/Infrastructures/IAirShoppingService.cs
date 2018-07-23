@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using NexusTravel.AirEngine.BritishAirway.Models;
 
 namespace NexusTravel.AirEngine.BritishAirway
 {
     public interface IAirShoppingService
     {
-        string Say();
+        string FlightSearch(FlightSearch search);
     }
 }

@@ -5,7 +5,7 @@ namespace NexusTravel.AirEngine.BritishAirway.Models.Infrastructures
 {
     [XmlType(Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
     [XmlRoot(ElementName = "Envelope", Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
-    internal class SoapEnvelope
+    public class SoapEnvelope : ISoapObject
     {
         [XmlAttribute(AttributeName = "soapenv", Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
         public string soapenva { get; set; }
@@ -14,7 +14,7 @@ namespace NexusTravel.AirEngine.BritishAirway.Models.Infrastructures
         [XmlAttribute(AttributeName = "xsi", Namespace = "http://www.w3.org/2001/XMLSchema-instance")]
         public string xsi { get; set; }
         [XmlElement(ElementName = "Body", Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
-        internal ResponseBody<AirShoppingRQ> body { get; set; }
+        public ResponseBody<AirShoppingRQ> body { get; set; }
         [XmlNamespaceDeclarations]
         public XmlSerializerNamespaces xmlns = new XmlSerializerNamespaces();
         public SoapEnvelope()

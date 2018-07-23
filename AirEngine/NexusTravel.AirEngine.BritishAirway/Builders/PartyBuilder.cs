@@ -4,7 +4,7 @@ using NexusTravel.Dal.Models;
 
 namespace NexusTravel.AirEngine.BritishAirway.Builders
 {
-    internal class PartyBuilder: IPartyBuilder
+    public class PartyBuilder: IPartyBuilder
     {
         private readonly SystemSettingDto _systemSetting;
 

@@ -1,8 +1,8 @@
 ﻿namespace NexusTravel.AirEngine.BritishAirway.Models.Common
 {
-    internal class Party
+    public class Party
     {
 
-        internal Sender Sender { get; set; }
+        public Sender Sender { get; set; }
     }
 }

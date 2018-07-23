@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace ClientTest.Entities
+namespace NexusTravel.AirEngine.BritishAirway.Models.Common
 {
     public class FarePreferences
     {
-        public List<Type> Types { get; set; }
+        public List<PreferenceType> Types { get; set; }
     }
 }

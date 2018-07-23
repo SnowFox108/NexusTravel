@@ -12,8 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Infrastructures\" />
-    <Folder Include="Models\Common\" />
     <Folder Include="Models\Send\" />
   </ItemGroup>
 
