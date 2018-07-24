@@ -1,4 +1,4 @@
-USE [AnyaSpa]
+USE [NexusTravel]
 GO
 
 /****** Object:  Table [Security].[User]    Script Date: 20/02/2018 10:16:20 ******/
