@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using NexusTravel.AirEngine.BritishAirway.Enums;
 using NexusTravel.AirEngine.BritishAirway.Models;
 using NexusTravel.AirEngine.BritishAirway.Models.Common;
 
@@ -34,18 +33,18 @@ namespace NexusTravel.AirEngine.BritishAirway.Builders
             return types;
         }
 
-        private CabinPreferences CreateCabinPreference(FlightClass cabinType)
+        private CabinPreferences CreateCabinPreference(int cabinType)
         {
             return new CabinPreferences()
             {
-                CabinType = CreateCabinType(((int)cabinType).ToString())
+                CabinType = CreateCabinType(cabinType)
             };
         }
-        private CabinType CreateCabinType(string code)
+        private CabinType CreateCabinType(int code)
         {
             return new CabinType()
             {
-                Code = code
+                Code = code.ToString()
             };
         }
 

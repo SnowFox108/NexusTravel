@@ -28,7 +28,7 @@ namespace NexusTravel.ClientTest
 
         public void Display()
         {
-            var criteria = new FlightSearch()
+            var criteria = new FlightSearchForm()
             {
                 TripType = TripType.Return,
                 From = "LHR",

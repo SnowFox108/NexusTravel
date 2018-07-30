@@ -4,6 +4,6 @@ namespace NexusTravel.AirEngine.BritishAirway
 {
     public interface IFlightSearchService
     {
-        string Search(FlightSearch search);
+        string Search(FlightSearchForm search);
     }
 }
