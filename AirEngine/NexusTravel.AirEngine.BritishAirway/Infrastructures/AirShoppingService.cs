@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using NexusTravel.AirEngine.BritishAirway.Builders;
 using NexusTravel.AirEngine.BritishAirway.Models;
 using NexusTravel.AirEngine.BritishAirway.Models.Infrastructures;
+using NexusTravel.AirEngine.BritishAirway.Models.Receive;
 using NexusTravel.AirEngine.BritishAirway.Models.Send;
 
 namespace NexusTravel.AirEngine.BritishAirway.Infrastructures
@@ -39,11 +40,12 @@ namespace NexusTravel.AirEngine.BritishAirway.Infrastructures
             _preferenceBuilder = preferenceBuilder;
         }
 
-        public string FlightSearch(FlightSearch search)
+        public AirShoppingRS FlightSearch(FlightSearch search)
         {
             var xml = CreateXml(search);
             var result = _soapService.SendRequest(xml);
-            return result;
+            var airShopping = _xmlService.AirShoppingParser(result);
+            return airShopping;
         }
 
         public string CreateXml(FlightSearch search)

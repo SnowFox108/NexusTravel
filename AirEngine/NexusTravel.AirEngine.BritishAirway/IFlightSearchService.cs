@@ -1,9 +1,10 @@
 ﻿using NexusTravel.AirEngine.BritishAirway.Models;
+using NexusTravel.AirEngine.BritishAirway.Models.Receive;
 
 namespace NexusTravel.AirEngine.BritishAirway
 {
     public interface IFlightSearchService
     {
-        string Search(FlightSearchForm search);
+        AirShoppingRS Search(FlightSearchForm search);
     }
 }

@@ -15,5 +15,10 @@ namespace NexusTravel.AirEngine.BritishAirway.Models.Common
             get => Date.ToString("yyyy-MM-dd");
             set => Date = DateTime.Parse(value);
         }
+
+        public string Time { get; set; }
+        public string AirportName { get; set; }
+        public Terminal Terminal { get; set; }
+
     }
 }

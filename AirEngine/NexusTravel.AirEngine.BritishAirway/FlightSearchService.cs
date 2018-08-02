@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using NexusTravel.AirEngine.BritishAirway.Infrastructures;
 using NexusTravel.AirEngine.BritishAirway.Models;
+using NexusTravel.AirEngine.BritishAirway.Models.Receive;
 
 namespace NexusTravel.AirEngine.BritishAirway
 {
@@ -16,7 +18,7 @@ namespace NexusTravel.AirEngine.BritishAirway
             _mapper = mapper;
         }
 
-        public string Search(FlightSearchForm search)
+        public AirShoppingRS Search(FlightSearchForm search)
         {
             var flightSearch = _mapper.Map<FlightSearch>(search);
             return _airShoppingService.FlightSearch(flightSearch);
