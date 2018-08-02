@@ -1,8 +1,9 @@
-﻿using System.IO;
-using System.Text;
+﻿using System;
+using System.IO;
+using System.Linq;
 using System.Xml;
+using System.Xml.Linq;
 using System.Xml.Serialization;
-using Microsoft.Web.Services3.Messaging;
 using NexusTravel.AirEngine.BritishAirway.Models.Infrastructures;
 using NexusTravel.AirEngine.BritishAirway.Models.Receive;
 
@@ -29,15 +30,16 @@ namespace NexusTravel.AirEngine.BritishAirway.Infrastructures
 
         public AirShoppingRS AirShoppingParser(string xml)
         {
-            byte[] byteArray = Encoding.UTF8.GetBytes(xml);
+            XDocument xDoc = XDocument.Load(new StringReader(xml));
+            var unwrappedResponse = xDoc.Descendants((XNamespace) "http://schemas.xmlsoap.org/soap/envelope/" + "Body");
+            var body = unwrappedResponse.First().FirstNode.ToString();
 
-            var stream = new MemoryStream(byteArray);
-
-            ISoapFormatter formatter = new SoapPlainFormatter();
-            var result = (AirShoppingRS)formatter.Deserialize(stream).GetBodyObject(typeof(AirShoppingRS), "http://www.iata.org/IATA/EDIST");
-            stream.Close();
-
-            return result;
+            XmlSerializer deSerializer = new XmlSerializer(typeof(AirShoppingRS), "http://www.iata.org/IATA/EDIST");
+            using (StringReader reader = new StringReader(body))
+            {
+                var result = (AirShoppingRS) deSerializer.Deserialize(reader);
+                return result;
+            }
         }
     }
 }
