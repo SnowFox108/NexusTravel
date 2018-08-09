@@ -13,10 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Send\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\NexusTravel.Common\NexusTravel.Common.csproj" />
     <ProjectReference Include="..\..\NexusTravel.Dal\NexusTravel.Dal.csproj" />
     <ProjectReference Include="..\..\NexusTravel.Infrastructure\NexusTravel.Infrastructure.csproj" />

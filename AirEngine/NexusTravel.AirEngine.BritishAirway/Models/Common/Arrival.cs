@@ -12,7 +12,12 @@ namespace NexusTravel.AirEngine.BritishAirway.Models.Common
         [XmlElement("Date")]
         public string DateString
         {
-            get => Date.ToString("yyyy-MM-dd");
+            get
+            {
+                if (Date == new DateTime())
+                    return null;
+                return Date.ToString("yyyy-MM-dd");
+            }
             set => Date = DateTime.Parse(value);
         }
         public string Time { get; set; }
