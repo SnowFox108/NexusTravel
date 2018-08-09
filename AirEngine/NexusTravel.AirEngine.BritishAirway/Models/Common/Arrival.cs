@@ -21,7 +21,21 @@ namespace NexusTravel.AirEngine.BritishAirway.Models.Common
             set => Date = DateTime.Parse(value);
         }
         public string Time { get; set; }
+        [XmlIgnore]
         public int ChangeOfDay { get; set; }
+
+        [XmlElement("ChangeOfDay")]
+        public string ChangeOfDayString
+        {
+            get
+            {
+                if (ChangeOfDay == 0)
+                    return null;
+                return ChangeOfDay.ToString();
+            }
+            set => ChangeOfDay = int.Parse(value);
+        }
+
         public string AirportName { get; set; }
         public Terminal Terminal { get; set; }
 
