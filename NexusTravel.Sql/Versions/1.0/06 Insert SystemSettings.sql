@@ -7,7 +7,7 @@ INSERT [dbo].[SystemSettings] ([Name], [Value]) VALUES (N'AirShoppingClientKey',
 GO
 INSERT [dbo].[SystemSettings] ([Name], [Value]) VALUES (N'TravelAgencyName', N'Travel Centre Clapham Limited')
 GO
-INSERT [dbo].[SystemSettings] ([Name], [Value]) VALUES (N'TravelAgencyName', N'johnny@travelcentreclapham')
+INSERT [dbo].[SystemSettings] ([Name], [Value]) VALUES (N'TravelAgencyEmail', N'johnny@travelcentreclapham')
 GO
 INSERT [dbo].[SystemSettings] ([Name], [Value]) VALUES (N'TravelAgencyIataNumber', N'91210092')
 GO
